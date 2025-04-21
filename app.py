@@ -90,4 +90,4 @@ def delete_user():
     return jsonify({"message": "Account and user successfully deleted"}), 200
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=10000)
